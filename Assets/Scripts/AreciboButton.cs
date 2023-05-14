@@ -21,6 +21,7 @@ public class AreciboButton : MonoBehaviour
 
     public void SelectAreciboButton()
     {
+        areciboManager.PlaySelectSound();
         isOn = !isOn;
         FillImage.color = isOn
             ? areciboManager.GetCurrentColor()

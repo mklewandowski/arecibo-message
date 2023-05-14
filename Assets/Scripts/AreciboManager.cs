@@ -30,6 +30,10 @@ public class AreciboManager : MonoBehaviour
     GameObject ColorPanel;
     [SerializeField]
     Transform[] ColorButtons;
+    [SerializeField]
+    AudioClip ButtonSound;
+    [SerializeField]
+    AudioClip SelectSound;
 
     Color currentColor = Color.white;
 
@@ -99,6 +103,11 @@ public class AreciboManager : MonoBehaviour
         }
     }
 
+    public void PlaySelectSound()
+    {
+        audioSource.PlayOneShot(SelectSound, 1f);
+    }
+
     public void SelectPlayStopButton()
     {
         isPlaying = !isPlaying;
@@ -135,6 +144,7 @@ public class AreciboManager : MonoBehaviour
 
     public void SetCurrentColor(int colorIndex)
     {
+        audioSource.PlayOneShot(ButtonSound, 1f);
         if (colorIndex == 0)
             currentColor = Color.white;
         else if (colorIndex == 1)
@@ -160,6 +170,7 @@ public class AreciboManager : MonoBehaviour
 
     public void ToggleColorPanel()
     {
+        audioSource.PlayOneShot(ButtonSound, 1f);
         showColors = !showColors;
         if (showColors)
             ColorPanel.GetComponent<MoveNormal>().MoveRight();
@@ -169,6 +180,7 @@ public class AreciboManager : MonoBehaviour
 
     public void SelectStart()
     {
+        audioSource.PlayOneShot(ButtonSound, 1f);
         HUDtitle.GetComponent<MoveNormal>().MoveUp();
         HUDbuttons.GetComponent<MoveNormal>().MoveDown();
         HUDarecibo.GetComponent<MoveNormal>().MoveRight();
@@ -176,6 +188,7 @@ public class AreciboManager : MonoBehaviour
 
     public void SelectTutorial()
     {
+        audioSource.PlayOneShot(ButtonSound, 1f);
         HUDtitle.GetComponent<MoveNormal>().MoveUp();
         HUDbuttons.GetComponent<MoveNormal>().MoveDown();
         HUDabout.GetComponent<MoveNormal>().MoveLeft();
@@ -183,6 +196,7 @@ public class AreciboManager : MonoBehaviour
 
     public void SelectBack()
     {
+        audioSource.PlayOneShot(ButtonSound, 1f);
         HUDtitle.GetComponent<MoveNormal>().MoveDown();
         HUDbuttons.GetComponent<MoveNormal>().MoveUp();
         HUDabout.GetComponent<MoveNormal>().MoveRight();
@@ -190,6 +204,7 @@ public class AreciboManager : MonoBehaviour
 
     public void SelectHome()
     {
+        audioSource.PlayOneShot(ButtonSound, 1f);
         HUDtitle.GetComponent<MoveNormal>().MoveDown();
         HUDbuttons.GetComponent<MoveNormal>().MoveUp();
         HUDarecibo.GetComponent<MoveNormal>().MoveLeft();

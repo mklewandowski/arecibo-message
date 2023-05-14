@@ -921,6 +921,8 @@ MonoBehaviour:
   - {fileID: 439389425}
   - {fileID: 784954652}
   - {fileID: 2085608303}
+  ButtonSound: {fileID: 8300000, guid: 79b79bb66ca8ccf4bbbd8e4e14c0ac7e, type: 3}
+  SelectSound: {fileID: 8300000, guid: a2114a374edb40a4aab0e94b8bdc92fd, type: 3}
   MaxButtons: 96
 --- !u!82 &439321859
 AudioSource:
