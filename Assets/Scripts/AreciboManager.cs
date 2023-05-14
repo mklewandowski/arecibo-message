@@ -13,6 +13,8 @@ public class AreciboManager : MonoBehaviour
     GameObject HUDbuttons;
     [SerializeField]
     GameObject HUDarecibo;
+    [SerializeField]
+    GameObject HUDabout;
 
     [SerializeField]
     GameObject AreciboButtonPrefab;
@@ -174,7 +176,16 @@ public class AreciboManager : MonoBehaviour
 
     public void SelectTutorial()
     {
+        HUDtitle.GetComponent<MoveNormal>().MoveUp();
+        HUDbuttons.GetComponent<MoveNormal>().MoveDown();
+        HUDabout.GetComponent<MoveNormal>().MoveLeft();
+    }
 
+    public void SelectBack()
+    {
+        HUDtitle.GetComponent<MoveNormal>().MoveDown();
+        HUDbuttons.GetComponent<MoveNormal>().MoveUp();
+        HUDabout.GetComponent<MoveNormal>().MoveRight();
     }
 
     public void SelectHome()
