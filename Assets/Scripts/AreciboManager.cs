@@ -204,6 +204,8 @@ public class AreciboManager : MonoBehaviour
 
     public void SelectHome()
     {
+        if (isPlaying)
+            SelectPlayStopButton();
         audioSource.PlayOneShot(ButtonSound, 1f);
         HUDtitle.GetComponent<MoveNormal>().MoveDown();
         HUDbuttons.GetComponent<MoveNormal>().MoveUp();
