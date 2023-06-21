@@ -27,6 +27,8 @@ public class AreciboManager : MonoBehaviour
     [SerializeField]
     Transform AreciboContainer;
     [SerializeField]
+    TextMeshProUGUI AreciboButtonText;
+    [SerializeField]
     TextMeshProUGUI ButtonText;
     [SerializeField]
     AudioClip[] OnSound;
@@ -56,6 +58,10 @@ public class AreciboManager : MonoBehaviour
     bool showColors = false;
 
     string message = "00000010101010000000000001010000010100000001001000100010001001011001010101010101010100100100000000000000000000000000000000000001100000000000000000001101000000000000000000011010000000000000000001010100000000000000000011111000000000000000000000000000000001100001110001100001100010000000000000110010000110100011000110000110101111101111101111101111100000000000000000000000000100000000000000000100000000000000000000000000001000000000000000001111110000000000000111110000000000000000000000011000011000011100011000100000001000000000100001101000011000111001101011111011111011111011111000000000000000000000000001000000110000000001000000000001100000000000000010000011000000000011111100000110000001111100000000001100000000000001000000001000000001000001000000110000000100000001100001100000010000000000110001000011000000000000000110011000000000000011000100001100000000011000011000000100000001000000100000000100000100000001100000000100010000000011000000001000100000000010000000100000100000001000000010000000100000000000011000000000110000000011000000000100011101011000000000001000000010000000000000010000011111000000000000100001011101001011011000000100111001001111111011100001110000011011100000000010100000111011001000000101000001111110010000001010000011000000100000110110000000000000000000000000000000000011100000100000000000000111010100010101010101001110000000001010101000000000000000010100000000000000111110000000000000000111111111000000000000111000000011100000000011000000000001100000001101000000000101100000110011000000011001100001000101000001010001000010001001000100100010000000010001010001000000000000100001000010000000000001000000000100000000000000100101000000000001111001111101001111000";
+    bool isPlayingArecibo = false;
+    int areciboPlayIndex = 0;
+    float areciboPlayTimer = 0;
+    float areciboPlayTimerMax = .25f;
 
     // Start is called before the first frame update
     void Start()
@@ -78,7 +84,7 @@ public class AreciboManager : MonoBehaviour
         if (playTimer > 0)
         {
             playTimer -= Time.deltaTime;
-            if (playTimer < 0)
+            if (playTimer <= 0)
             {
                 AreciboButtons[playIndex].GetComponent<AreciboButton>().ToggleImageHighlight(false);
                 playIndex++;
@@ -109,6 +115,34 @@ public class AreciboManager : MonoBehaviour
                     isPlaying = false;
                     ButtonText.text = "Play Message";
                 }
+            }
+        }
+
+        if (areciboPlayTimer > 0)
+        {
+            areciboPlayTimer -= Time.deltaTime;
+            if (areciboPlayTimer <= 0)
+            {
+                if (areciboPlayIndex < MaxSquares)
+                {
+                    if (AreciboSquares[areciboPlayIndex].GetComponent<AreciboSquare>().On)
+                    {
+                        AreciboSquares[areciboPlayIndex].GetComponent<AreciboSquare>().SquareImage.color = Color.white;
+                        audioSource.PlayOneShot(OnSound[0], 1f);
+                    }
+                    else
+                    {
+                        AreciboSquares[areciboPlayIndex].GetComponent<AreciboSquare>().SquareImage.color = Color.black;
+                        audioSource.PlayOneShot(OffSound, 1f);
+                    }
+                    areciboPlayTimer = areciboPlayTimerMax;
+                }
+                else
+                {
+                    isPlayingArecibo = false;
+                    AreciboButtonText.text = "Play";
+                }
+                areciboPlayIndex++;
             }
         }
     }
@@ -206,6 +240,8 @@ public class AreciboManager : MonoBehaviour
 
     public void SelectBack()
     {
+        if (isPlayingArecibo)
+            SelectAreciboPlayStopButton();
         audioSource.PlayOneShot(ButtonSound, 1f);
         HUDtitle.GetComponent<MoveNormal>().MoveDown();
         HUDbuttons.GetComponent<MoveNormal>().MoveUp();
@@ -255,11 +291,36 @@ public class AreciboManager : MonoBehaviour
         }
     }
 
-    public void PlayAreciboMessage()
+    public void SelectAreciboPlayStopButton()
     {
-        for (int x = 0; x < MaxSquares; x++)
+        isPlayingArecibo = !isPlayingArecibo;
+        if (isPlayingArecibo)
         {
-            // WTD WTD
+            areciboPlayTimer = areciboPlayTimerMax;
+            areciboPlayIndex = 0;
+            AreciboButtonText.text = "Stop";
+            for (int x = 0; x < MaxSquares; x++)
+            {
+                AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = new Color(118f/255f, 136f/255f, 169f/255f);
+            }
         }
+        else
+        {
+            for (int x = 0; x < MaxSquares; x++)
+            {
+                if (AreciboSquares[x].GetComponent<AreciboSquare>().On)
+                {
+                    AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = Color.white;
+                }
+                else
+                {
+                    AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = Color.black;
+                }
+            }
+            AreciboButtonText.text = "Play Arecibo";
+            areciboPlayTimer = 0;
+        }
+
     }
+
 }

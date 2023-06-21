@@ -184,9 +184,9 @@ MonoBehaviour:
   m_text: The Arecibo Message was a radio message sent into outer space in 1974.
     The goal of the message was to communicate with extraterrestrial life! The message
     consisted of 1679 binary digits which can be displayed as an image.\n\nCreate
-    your own message by selecting squares in the grid. Then use the Play button to
-    hear what your message might sound like if broadcast into space! Write letters,
-    draw pictures, or create something totally unique!
+    your own message by selecting squares in the grid. Then use the Play Message
+    button to hear what your message might sound like if broadcast into space! Write
+    letters, draw pictures, or create something totally unique!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d845485c448e98469df253633ecf628, type: 2}
   m_sharedMaterial: {fileID: -9006660395421701712, guid: 5d845485c448e98469df253633ecf628, type: 2}
@@ -1146,6 +1146,7 @@ MonoBehaviour:
   AreciboSquarePrefab: {fileID: 4621309264751950691, guid: 271f7169a23929a48a88147ebb8c9719, type: 3}
   AreciboButtonPrefab: {fileID: 7781509181083055898, guid: b6782b12a149f9447a2ea3db941921b0, type: 3}
   AreciboContainer: {fileID: 1543406785}
+  AreciboButtonText: {fileID: 1086523804}
   ButtonText: {fileID: 2012469010}
   OnSound:
   - {fileID: 8300000, guid: 392e857f0b929f3498e044f909d68c99, type: 3}
@@ -2226,7 +2227,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -385, y: 330}
-  m_SizeDelta: {x: 150, y: 70}
+  m_SizeDelta: {x: 207, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698630498
 MonoBehaviour:
@@ -2274,7 +2275,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 439321858}
         m_TargetAssemblyTypeName: AreciboManager, Assembly-CSharp
-        m_MethodName: PlayAreciboMessage
+        m_MethodName: SelectAreciboPlayStopButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3784,7 +3785,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play
+  m_text: Play Arecibo
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d845485c448e98469df253633ecf628, type: 2}
   m_sharedMaterial: {fileID: -9006660395421701712, guid: 5d845485c448e98469df253633ecf628, type: 2}
@@ -3811,8 +3812,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 32
+  m_fontSizeBase: 32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
