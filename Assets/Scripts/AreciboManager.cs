@@ -15,6 +15,12 @@ public class AreciboManager : MonoBehaviour
     GameObject HUDarecibo;
     [SerializeField]
     GameObject HUDabout;
+    [SerializeField]
+    GameObject HUDareciboPanel;
+    [SerializeField]
+    GameObject AreciboSquarePrefab;
+    GameObject[] AreciboSquares;
+    int MaxSquares = 1679;
 
     [SerializeField]
     GameObject AreciboButtonPrefab;
@@ -49,6 +55,8 @@ public class AreciboManager : MonoBehaviour
 
     bool showColors = false;
 
+    string message = "00000010101010000000000001010000010100000001001000100010001001011001010101010101010100100100000000000000000000000000000000000001100000000000000000001101000000000000000000011010000000000000000001010100000000000000000011111000000000000000000000000000000001100001110001100001100010000000000000110010000110100011000110000110101111101111101111101111100000000000000000000000000100000000000000000100000000000000000000000000001000000000000000001111110000000000000111110000000000000000000000011000011000011100011000100000001000000000100001101000011000111001101011111011111011111011111000000000000000000000000001000000110000000001000000000001100000000000000010000011000000000011111100000110000001111100000000001100000000000001000000001000000001000001000000110000000100000001100001100000010000000000110001000011000000000000000110011000000000000011000100001100000000011000011000000100000001000000100000000100000100000001100000000100010000000011000000001000100000000010000000100000100000001000000010000000100000000000011000000000110000000011000000000100011101011000000000001000000010000000000000010000011111000000000000100001011101001011011000000100111001001111111011100001110000011011100000000010100000111011001000000101000001111110010000001010000011000000100000110110000000000000000000000000000000000011100000100000000000000111010100010101010101001110000000001010101000000000000000010100000000000000111110000000000000000111111111000000000000111000000011100000000011000000000001100000001101000000000101100000110011000000011001100001000101000001010001000010001001000100100010000000010001010001000000000000100001000010000000000001000000000100000000000000100101000000000001111001111101001111000";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -60,6 +68,8 @@ public class AreciboManager : MonoBehaviour
         {
             AreciboButtons[x] = Instantiate(AreciboButtonPrefab, AreciboContainer);
         }
+
+        InitAboutPanel();
     }
 
     // Update is called once per frame
@@ -210,5 +220,46 @@ public class AreciboManager : MonoBehaviour
         HUDtitle.GetComponent<MoveNormal>().MoveDown();
         HUDbuttons.GetComponent<MoveNormal>().MoveUp();
         HUDarecibo.GetComponent<MoveNormal>().MoveLeft();
+    }
+
+    public void SelectClear()
+    {
+        if (isPlaying)
+            SelectPlayStopButton();
+        audioSource.PlayOneShot(ButtonSound, 1f);
+
+        for (int x = 0; x < AreciboButtons.Length; x++)
+        {
+            AreciboButtons[x].GetComponent<AreciboButton>().TurnOff();
+        }
+    }
+
+    void InitAboutPanel()
+    {
+        AreciboSquares = new GameObject[MaxSquares];
+
+        for (int x = 0; x < MaxSquares; x++)
+        {
+            char c = message[x];
+            AreciboSquares[x] = Instantiate(AreciboSquarePrefab, HUDareciboPanel.transform);
+            if (c == '1')
+            {
+                AreciboSquares[x].GetComponent<AreciboSquare>().On = true;
+                AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = Color.white;
+            }
+            else
+            {
+                AreciboSquares[x].GetComponent<AreciboSquare>().On = false;
+                AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = Color.black;
+            }
+        }
+    }
+
+    public void PlayAreciboMessage()
+    {
+        for (int x = 0; x < MaxSquares; x++)
+        {
+            // WTD WTD
+        }
     }
 }

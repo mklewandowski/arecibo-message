@@ -32,4 +32,12 @@ public class AreciboButton : MonoBehaviour
     {
         HighlightImage.SetActive(show);
     }
+
+    public void TurnOff()
+    {
+        HighlightImage.SetActive(false);
+        isOn = false;
+        FillImage.color = Color.black;
+    }
+
 }
