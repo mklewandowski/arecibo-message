@@ -165,7 +165,10 @@ public class AreciboManager : MonoBehaviour
         isPlaying = !isPlaying;
         if (isPlaying)
         {
-            ButtonText.text = "Stop Message";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                ButtonText.text = "Stop Message";
+            else
+                ButtonText.text = "Stop Message";
             playTimer = playTimerMax;
             playIndex = 0;
             AreciboButtons[playIndex].GetComponent<AreciboButton>().ToggleImageHighlight(true);
@@ -188,7 +191,10 @@ public class AreciboManager : MonoBehaviour
         }
         else
         {
-            ButtonText.text = "Play Message";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                ButtonText.text = "Play Message";
+            else
+                ButtonText.text = "Play Message";
             playTimer = 0;
             AreciboButtons[playIndex].GetComponent<AreciboButton>().ToggleImageHighlight(false);
         }
@@ -315,7 +321,10 @@ public class AreciboManager : MonoBehaviour
         {
             areciboPlayTimer = areciboPlayTimerMax;
             areciboPlayIndex = 0;
-            AreciboButtonText.text = "Stop";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                AreciboButtonText.text = "Stop";
+            else
+                AreciboButtonText.text = "Stop";
             for (int x = 0; x < MaxSquares; x++)
             {
                 AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = new Color(118f/255f, 136f/255f, 169f/255f);
@@ -334,7 +343,10 @@ public class AreciboManager : MonoBehaviour
                     AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = Color.black;
                 }
             }
-            AreciboButtonText.text = "Play Arecibo";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                AreciboButtonText.text = "Play Arecibo";
+            else
+                AreciboButtonText.text = "Play Arecibo";
             areciboPlayTimer = 0;
         }
 
