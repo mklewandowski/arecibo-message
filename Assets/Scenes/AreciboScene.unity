@@ -3200,7 +3200,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Espa\xF1ol"
+  m_text: "ESPA\xD1OL"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d845485c448e98469df253633ecf628, type: 2}
   m_sharedMaterial: {fileID: -9006660395421701712, guid: 5d845485c448e98469df253633ecf628, type: 2}

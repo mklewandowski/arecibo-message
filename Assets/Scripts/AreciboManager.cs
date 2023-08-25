@@ -354,9 +354,9 @@ public class AreciboManager : MonoBehaviour
     {
         Globals.CurrentLanguage = newLang;
         if (Globals.CurrentLanguage == Globals.Language.English)
-            LanguageText.text = "Español";
+            LanguageText.text = "ESPAÑOL";
         else
-            LanguageText.text = "English";
+            LanguageText.text = "ENGLISH";
 
         TranslateText[] textObjects = GameObject.FindObjectsOfType<TranslateText>(true);
         for (int i = 0; i < textObjects.Length; i++)
