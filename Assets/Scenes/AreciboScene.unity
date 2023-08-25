@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 7691810}
   - component: {fileID: 7691812}
   - component: {fileID: 7691811}
+  - component: {fileID: 7691813}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -186,13 +187,13 @@ MonoBehaviour:
     Some blocks were \"on\" and others were \"off\", similar to how lights can be
     turned on or off. The scientists wanted to tell any aliens out there a little
     about us with the message, so they arranged these blocks to communicate some
-    simple things. \r\n\r\n\u2022 Numbers we use from 1 to 10.\r\n\u2022 Elements
-    that make up our DNA\u2014a unique instruction manual inside every person.\r\n\u2022
-    A drawing of a human.\r\n\u2022 Our solar system.\r\n\u2022 And a picture of
-    the Arecibo telescope.\r\n\r\nWhile this was only a short message that would
-    take thousands of years to reach another star, it was our first attempt to communicate\u2014hoping
+    simple things.\\n\\n\u2022 Numbers we use from 1 to 10.\\n\u2022 Elements that
+    make up our DNA\u2014a unique instruction manual inside every person.\\n\u2022
+    A drawing of a human.\\n\u2022 Our solar system.\\n\u2022 And a picture of the
+    Arecibo telescope.\\n\\nWhile this was only a short message that would take thousands
+    of years to reach another star, it was our first attempt to communicate\u2014hoping
     for a response outside our world. We have turned the tiny blocks of the message
-    into tones so you can \u201Clisten\u201D to it.\r"
+    into tones so you can \u201Clisten\u201D to it."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d845485c448e98469df253633ecf628, type: 2}
   m_sharedMaterial: {fileID: -9006660395421701712, guid: 5d845485c448e98469df253633ecf628, type: 2}
@@ -269,6 +270,46 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7691809}
   m_CullTransparentMesh: 1
+--- !u!114 &7691813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7691809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - "Many years ago, scientists sent a message from a big radio telescope in Puerto
+    Rico called Arecibo.The message was like a puzzle made of 1,679 tiny blocks.
+    Some blocks were \"on\" and others were \"off\", similar to how lights can be
+    turned on or off. The scientists wanted to tell any aliens out there a little
+    about us with the message, so they arranged these blocks to communicate some
+    simple things.\\n\\n\u2022 Numbers we use from 1 to 10.\\n\u2022 Elements that
+    make up our DNA\u2014a unique instruction manual inside every person.\\n\u2022
+    A drawing of a human.\\n\u2022 Our solar system.\\n\u2022 And a picture of the
+    Arecibo telescope.\\n\\nWhile this was only a short message that would take thousands
+    of years to reach another star, it was our first attempt to communicate\u2014hoping
+    for a response outside our world. We have turned the tiny blocks of the message
+    into tones so you can \u201Clisten\u201D to it."
+  - "Many years ago, scientists sent a message from a big radio telescope in Puerto
+    Rico called Arecibo.The message was like a puzzle made of 1,679 tiny blocks.
+    Some blocks were \"on\" and others were \"off\", similar to how lights can be
+    turned on or off. The scientists wanted to tell any aliens out there a little
+    about us with the message, so they arranged these blocks to communicate some
+    simple things.\\n\\n\u2022 Numbers we use from 1 to 10.\\n\u2022 Elements that
+    make up our DNA\u2014a unique instruction manual inside every person.\\n\u2022
+    A drawing of a human.\\n\u2022 Our solar system.\\n\u2022 And a picture of the
+    Arecibo telescope.\\n\\nWhile this was only a short message that would take thousands
+    of years to reach another star, it was our first attempt to communicate\u2014hoping
+    for a response outside our world. We have turned the tiny blocks of the message
+    into tones so you can \u201Clisten\u201D to it."
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &8555244
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,6 +736,7 @@ GameObject:
   - component: {fileID: 198539403}
   - component: {fileID: 198539405}
   - component: {fileID: 198539404}
+  - component: {fileID: 198539406}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -819,6 +861,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 198539402}
   m_CullTransparentMesh: 1
+--- !u!114 &198539406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198539402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Clear
+  - Clear
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &282826497
 GameObject:
   m_ObjectHideFlags: 0
@@ -1037,6 +1097,7 @@ GameObject:
   - component: {fileID: 391521031}
   - component: {fileID: 391521033}
   - component: {fileID: 391521032}
+  - component: {fileID: 391521034}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -1161,6 +1222,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 391521030}
   m_CullTransparentMesh: 1
+--- !u!114 &391521034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391521030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Start!
+  - Start!
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &413577249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3440,6 +3519,7 @@ GameObject:
   - component: {fileID: 955105682}
   - component: {fileID: 955105684}
   - component: {fileID: 955105683}
+  - component: {fileID: 955105685}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -3569,6 +3649,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955105681}
   m_CullTransparentMesh: 1
+--- !u!114 &955105685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955105681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - "If there are aliens out there, what would you say to them if you just had a
+    tiny grid of blocks for your message? Would you draw a picture like the Arecibo
+    Message, or try something else? \\n\\nWe've added the ability to color your blocks!
+    Try to \u201Cplay\u201D your message to hear what you added or didn't add. If
+    this message was sent into space on radio waves, imagine what an alien would
+    think! "
+  - "If there are aliens out there, what would you say to them if you just had a
+    tiny grid of blocks for your message? Would you draw a picture like the Arecibo
+    Message, or try something else? \\n\\nWe've added the ability to color your blocks!
+    Try to \u201Cplay\u201D your message to hear what you added or didn't add. If
+    this message was sent into space on radio waves, imagine what an alien would
+    think! "
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &977612345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3714,6 +3822,7 @@ GameObject:
   - component: {fileID: 983805495}
   - component: {fileID: 983805497}
   - component: {fileID: 983805496}
+  - component: {fileID: 983805498}
   m_Layer: 5
   m_Name: InstructionsText
   m_TagString: Untagged
@@ -3838,6 +3947,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 983805494}
   m_CullTransparentMesh: 1
+--- !u!114 &983805498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983805494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - ENTER YOUR MESSAGE
+  - ENTER YOUR MESSAGE
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &990290323
 GameObject:
   m_ObjectHideFlags: 0
@@ -4506,6 +4633,7 @@ GameObject:
   - component: {fileID: 1065569247}
   - component: {fileID: 1065569249}
   - component: {fileID: 1065569248}
+  - component: {fileID: 1065569250}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4630,6 +4758,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065569246}
   m_CullTransparentMesh: 1
+--- !u!114 &1065569250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065569246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Guide
+  - Guide
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &1086523802
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,6 +4787,7 @@ GameObject:
   - component: {fileID: 1086523803}
   - component: {fileID: 1086523805}
   - component: {fileID: 1086523804}
+  - component: {fileID: 1086523806}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -4765,6 +4912,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1086523802}
   m_CullTransparentMesh: 1
+--- !u!114 &1086523806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086523802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Play Arecibo
+  - Play Arecibo
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &1122182258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4776,6 +4941,7 @@ GameObject:
   - component: {fileID: 1122182259}
   - component: {fileID: 1122182261}
   - component: {fileID: 1122182260}
+  - component: {fileID: 1122182262}
   m_Layer: 5
   m_Name: IntroText (TMP)
   m_TagString: Untagged
@@ -4900,6 +5066,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1122182258}
   m_CullTransparentMesh: 1
+--- !u!114 &1122182262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122182258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Hey space, it's me, Earth.
+  - Hey space, it's me, Earth.
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &1140709763
 GameObject:
   m_ObjectHideFlags: 0
@@ -5122,6 +5306,7 @@ GameObject:
   - component: {fileID: 1201573752}
   - component: {fileID: 1201573754}
   - component: {fileID: 1201573753}
+  - component: {fileID: 1201573755}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -5246,6 +5431,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201573751}
   m_CullTransparentMesh: 1
+--- !u!114 &1201573755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201573751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Create Message
+  - Create Message
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &1355190214
 GameObject:
   m_ObjectHideFlags: 0
@@ -5931,6 +6134,7 @@ GameObject:
   - component: {fileID: 1827241080}
   - component: {fileID: 1827241082}
   - component: {fileID: 1827241081}
+  - component: {fileID: 1827241083}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6055,6 +6259,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827241079}
   m_CullTransparentMesh: 1
+--- !u!114 &1827241083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827241079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Create Your Own Message
+  - Create Your Own Message
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &1865348271
 GameObject:
   m_ObjectHideFlags: 0
@@ -6469,6 +6691,7 @@ GameObject:
   - component: {fileID: 2000478692}
   - component: {fileID: 2000478694}
   - component: {fileID: 2000478693}
+  - component: {fileID: 2000478695}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6593,6 +6816,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000478691}
   m_CullTransparentMesh: 1
+--- !u!114 &2000478695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000478691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Game Guide
+  - Game Guide
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &2012469008
 GameObject:
   m_ObjectHideFlags: 0
@@ -6604,6 +6845,7 @@ GameObject:
   - component: {fileID: 2012469009}
   - component: {fileID: 2012469011}
   - component: {fileID: 2012469010}
+  - component: {fileID: 2012469012}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6728,6 +6970,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012469008}
   m_CullTransparentMesh: 1
+--- !u!114 &2012469012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012469008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Play Message
+  - Play Message
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &2081088749
 GameObject:
   m_ObjectHideFlags: 0
@@ -6739,6 +6999,7 @@ GameObject:
   - component: {fileID: 2081088750}
   - component: {fileID: 2081088752}
   - component: {fileID: 2081088751}
+  - component: {fileID: 2081088753}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -6863,6 +7124,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081088749}
   m_CullTransparentMesh: 1
+--- !u!114 &2081088753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081088749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f8116995ff67e54e9d79f7a71918849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedText:
+  - Home
+  - Home
+  AdjustFont: 0
+  FontSize: 0
+  LineSpacing: 0
 --- !u!1 &2085608302
 GameObject:
   m_ObjectHideFlags: 0
