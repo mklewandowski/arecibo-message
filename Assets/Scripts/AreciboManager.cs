@@ -16,6 +16,8 @@ public class AreciboManager : MonoBehaviour
     [SerializeField]
     GameObject HUDabout;
     [SerializeField]
+    GameObject HUDabout2;
+    [SerializeField]
     GameObject HUDareciboPanel;
     [SerializeField]
     GameObject AreciboSquarePrefab;
@@ -42,6 +44,9 @@ public class AreciboManager : MonoBehaviour
     AudioClip ButtonSound;
     [SerializeField]
     AudioClip SelectSound;
+
+    [SerializeField]
+    TextMeshProUGUI LanguageText;
 
     Color currentColor = Color.white;
 
@@ -74,6 +79,9 @@ public class AreciboManager : MonoBehaviour
         {
             AreciboButtons[x] = Instantiate(AreciboButtonPrefab, AreciboContainer);
         }
+
+        Globals.LoadUserSettings();
+        SelectLanguage(Globals.CurrentLanguage);
 
         InitAboutPanel();
     }
@@ -157,7 +165,10 @@ public class AreciboManager : MonoBehaviour
         isPlaying = !isPlaying;
         if (isPlaying)
         {
-            ButtonText.text = "Stop Message";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                ButtonText.text = "Stop Message";
+            else
+                ButtonText.text = "Stop Message";
             playTimer = playTimerMax;
             playIndex = 0;
             AreciboButtons[playIndex].GetComponent<AreciboButton>().ToggleImageHighlight(true);
@@ -180,7 +191,10 @@ public class AreciboManager : MonoBehaviour
         }
         else
         {
-            ButtonText.text = "Play Message";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                ButtonText.text = "Play Message";
+            else
+                ButtonText.text = "Play Message";
             playTimer = 0;
             AreciboButtons[playIndex].GetComponent<AreciboButton>().ToggleImageHighlight(false);
         }
@@ -228,6 +242,7 @@ public class AreciboManager : MonoBehaviour
         HUDtitle.GetComponent<MoveNormal>().MoveUp();
         HUDbuttons.GetComponent<MoveNormal>().MoveDown();
         HUDarecibo.GetComponent<MoveNormal>().MoveRight();
+        HUDabout2.GetComponent<MoveNormal>().MoveRight();
     }
 
     public void SelectTutorial()
@@ -236,6 +251,14 @@ public class AreciboManager : MonoBehaviour
         HUDtitle.GetComponent<MoveNormal>().MoveUp();
         HUDbuttons.GetComponent<MoveNormal>().MoveDown();
         HUDabout.GetComponent<MoveNormal>().MoveLeft();
+        HUDarecibo.GetComponent<MoveNormal>().MoveLeft();
+    }
+
+    public void SelectTutorialNext()
+    {
+        audioSource.PlayOneShot(ButtonSound, 1f);
+        HUDabout.GetComponent<MoveNormal>().MoveRight();
+        HUDabout2.GetComponent<MoveNormal>().MoveLeft();
     }
 
     public void SelectBack()
@@ -298,7 +321,10 @@ public class AreciboManager : MonoBehaviour
         {
             areciboPlayTimer = areciboPlayTimerMax;
             areciboPlayIndex = 0;
-            AreciboButtonText.text = "Stop";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                AreciboButtonText.text = "Stop";
+            else
+                AreciboButtonText.text = "Stop";
             for (int x = 0; x < MaxSquares; x++)
             {
                 AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = new Color(118f/255f, 136f/255f, 169f/255f);
@@ -317,10 +343,46 @@ public class AreciboManager : MonoBehaviour
                     AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = Color.black;
                 }
             }
-            AreciboButtonText.text = "Play Arecibo";
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                AreciboButtonText.text = "Play Arecibo";
+            else
+                AreciboButtonText.text = "Play Arecibo";
             areciboPlayTimer = 0;
         }
 
+    }
+
+    public void ToggleLanguage()
+    {
+        Debug.Log("ToggleLanguage");
+        audioSource.PlayOneShot(ButtonSound, 1f);
+        if (Globals.CurrentLanguage == Globals.Language.English)
+            SelectLanguage(Globals.Language.Spanish);
+        else
+            SelectLanguage(Globals.Language.English);
+    }
+
+    public void SelectLanguage(Globals.Language newLang)
+    {
+        Globals.CurrentLanguage = newLang;
+        if (Globals.CurrentLanguage == Globals.Language.English)
+            LanguageText.text = "ESPAÑOL";
+        else
+            LanguageText.text = "ENGLISH";
+
+        TranslateText[] textObjects = GameObject.FindObjectsOfType<TranslateText>(true);
+        for (int i = 0; i < textObjects.Length; i++)
+        {
+            textObjects[i].UpdateText();
+        }
+
+        TranslateImage[] imageObjects = GameObject.FindObjectsOfType<TranslateImage>(true);
+        for (int i = 0; i < imageObjects.Length; i++)
+        {
+            imageObjects[i].UpdateImage();
+        }
+
+        Globals.SaveIntToPlayerPrefs(Globals.LanguageStorageKey, (int)newLang);
     }
 
 }
