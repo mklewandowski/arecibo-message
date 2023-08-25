@@ -45,6 +45,9 @@ public class AreciboManager : MonoBehaviour
     [SerializeField]
     AudioClip SelectSound;
 
+    [SerializeField]
+    TextMeshProUGUI LanguageText;
+
     Color currentColor = Color.white;
 
     [SerializeField]
@@ -76,6 +79,9 @@ public class AreciboManager : MonoBehaviour
         {
             AreciboButtons[x] = Instantiate(AreciboButtonPrefab, AreciboContainer);
         }
+
+        Globals.LoadUserSettings();
+        SelectLanguage(Globals.CurrentLanguage);
 
         InitAboutPanel();
     }
@@ -332,6 +338,39 @@ public class AreciboManager : MonoBehaviour
             areciboPlayTimer = 0;
         }
 
+    }
+
+    public void ToggleLanguage()
+    {
+        Debug.Log("ToggleLanguage");
+        audioSource.PlayOneShot(ButtonSound, 1f);
+        if (Globals.CurrentLanguage == Globals.Language.English)
+            SelectLanguage(Globals.Language.Spanish);
+        else
+            SelectLanguage(Globals.Language.English);
+    }
+
+    public void SelectLanguage(Globals.Language newLang)
+    {
+        Globals.CurrentLanguage = newLang;
+        if (Globals.CurrentLanguage == Globals.Language.English)
+            LanguageText.text = "Español";
+        else
+            LanguageText.text = "English";
+
+        TranslateText[] textObjects = GameObject.FindObjectsOfType<TranslateText>(true);
+        for (int i = 0; i < textObjects.Length; i++)
+        {
+            textObjects[i].UpdateText();
+        }
+
+        TranslateImage[] imageObjects = GameObject.FindObjectsOfType<TranslateImage>(true);
+        for (int i = 0; i < imageObjects.Length; i++)
+        {
+            imageObjects[i].UpdateImage();
+        }
+
+        Globals.SaveIntToPlayerPrefs(Globals.LanguageStorageKey, (int)newLang);
     }
 
 }
