@@ -16,6 +16,8 @@ public class AreciboManager : MonoBehaviour
     [SerializeField]
     GameObject HUDabout;
     [SerializeField]
+    GameObject HUDabout2;
+    [SerializeField]
     GameObject HUDareciboPanel;
     [SerializeField]
     GameObject AreciboSquarePrefab;
@@ -228,6 +230,7 @@ public class AreciboManager : MonoBehaviour
         HUDtitle.GetComponent<MoveNormal>().MoveUp();
         HUDbuttons.GetComponent<MoveNormal>().MoveDown();
         HUDarecibo.GetComponent<MoveNormal>().MoveRight();
+        HUDabout2.GetComponent<MoveNormal>().MoveRight();
     }
 
     public void SelectTutorial()
@@ -236,6 +239,14 @@ public class AreciboManager : MonoBehaviour
         HUDtitle.GetComponent<MoveNormal>().MoveUp();
         HUDbuttons.GetComponent<MoveNormal>().MoveDown();
         HUDabout.GetComponent<MoveNormal>().MoveLeft();
+        HUDarecibo.GetComponent<MoveNormal>().MoveLeft();
+    }
+
+    public void SelectTutorialNext()
+    {
+        audioSource.PlayOneShot(ButtonSound, 1f);
+        HUDabout.GetComponent<MoveNormal>().MoveRight();
+        HUDabout2.GetComponent<MoveNormal>().MoveLeft();
     }
 
     public void SelectBack()
