@@ -4475,6 +4475,7 @@ GameObject:
   - component: {fileID: 1043391687}
   - component: {fileID: 1043391686}
   - component: {fileID: 1043391688}
+  - component: {fileID: 1043391689}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -4560,6 +4561,21 @@ MonoBehaviour:
   movingDownVelocity: -2000
   movingLeftVelocity: -2000
   movingRightVelocity: 2000
+--- !u!114 &1043391689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1043391684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c1d9f5760333984b831133ea3b258f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedImage:
+  - {fileID: 21300000, guid: 1f1b00b8a8f1b4743924b9dc9240ca99, type: 3}
+  - {fileID: 21300000, guid: 6bf20a12f5b4be94c8011deba94bdcd2, type: 3}
 --- !u!1 &1054736344
 GameObject:
   m_ObjectHideFlags: 0
