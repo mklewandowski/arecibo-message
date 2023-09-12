@@ -121,7 +121,10 @@ public class AreciboManager : MonoBehaviour
                 else
                 {
                     isPlaying = false;
-                    ButtonText.text = "Play Message";
+                    if (Globals.CurrentLanguage == Globals.Language.English)
+                        ButtonText.text = "Play Message";
+                    else
+                        ButtonText.text = "Reproducir el mensaje";
                 }
             }
         }
@@ -148,7 +151,10 @@ public class AreciboManager : MonoBehaviour
                 else
                 {
                     isPlayingArecibo = false;
-                    AreciboButtonText.text = "Play";
+                    if (Globals.CurrentLanguage == Globals.Language.English)
+                        AreciboButtonText.text = "Play";
+                    else
+                        AreciboButtonText.text = "Reproducir";
                 }
                 areciboPlayIndex++;
             }
@@ -168,7 +174,7 @@ public class AreciboManager : MonoBehaviour
             if (Globals.CurrentLanguage == Globals.Language.English)
                 ButtonText.text = "Stop Message";
             else
-                ButtonText.text = "Stop Message";
+                ButtonText.text = "Detener mensaje";
             playTimer = playTimerMax;
             playIndex = 0;
             AreciboButtons[playIndex].GetComponent<AreciboButton>().ToggleImageHighlight(true);
@@ -194,7 +200,7 @@ public class AreciboManager : MonoBehaviour
             if (Globals.CurrentLanguage == Globals.Language.English)
                 ButtonText.text = "Play Message";
             else
-                ButtonText.text = "Play Message";
+                ButtonText.text = "Reproducir el mensaje";
             playTimer = 0;
             AreciboButtons[playIndex].GetComponent<AreciboButton>().ToggleImageHighlight(false);
         }
@@ -324,7 +330,7 @@ public class AreciboManager : MonoBehaviour
             if (Globals.CurrentLanguage == Globals.Language.English)
                 AreciboButtonText.text = "Stop";
             else
-                AreciboButtonText.text = "Stop";
+                AreciboButtonText.text = "Detener";
             for (int x = 0; x < MaxSquares; x++)
             {
                 AreciboSquares[x].GetComponent<AreciboSquare>().SquareImage.color = new Color(118f/255f, 136f/255f, 169f/255f);
@@ -344,9 +350,9 @@ public class AreciboManager : MonoBehaviour
                 }
             }
             if (Globals.CurrentLanguage == Globals.Language.English)
-                AreciboButtonText.text = "Play Arecibo";
+                AreciboButtonText.text = "Play Arecibo Message";
             else
-                AreciboButtonText.text = "Play Arecibo";
+                AreciboButtonText.text = "Reproducir Arecibo";
             areciboPlayTimer = 0;
         }
 

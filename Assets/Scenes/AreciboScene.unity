@@ -182,18 +182,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Many years ago, scientists sent a message from a big radio telescope in
-    Puerto Rico called Arecibo.The message was like a puzzle made of 1,679 tiny blocks.
-    Some blocks were \"on\" and others were \"off\", similar to how lights can be
-    turned on or off. The scientists wanted to tell any aliens out there a little
-    about us with the message, so they arranged these blocks to communicate some
-    simple things.\\n\\n\u2022 Numbers we use from 1 to 10.\\n\u2022 Elements that
-    make up our DNA\u2014a unique instruction manual inside every person.\\n\u2022
-    A drawing of a human.\\n\u2022 Our solar system.\\n\u2022 And a picture of the
-    Arecibo telescope.\\n\\nWhile this was only a short message that would take thousands
-    of years to reach another star, it was our first attempt to communicate\u2014hoping
-    for a response outside our world. We have turned the tiny blocks of the message
-    into tones so you can \u201Clisten\u201D to it."
+  m_text: "Many years ago, scientists sent a message from a radio telescope in Puerto
+    Rico called Arecibo. The message was like a puzzle made of 1,679 tiny blocks.
+    Some blocks were \"on\" and others were \"off,\" similar to how a light works.
+    The scientists wanted to tell any aliens out there a little about us with the
+    message, so they arranged these blocks to share some simple facts.\\n\\n\u2022
+    Numbers we use from 1 to 10\\n\u2022 Elements that make up our DNA\u2014a unique
+    instruction manual inside every person\\n\u2022 A drawing of a human\\n\u2022
+    Our solar system.\\n\u2022 And a picture of the Arecibo telescope\\n\\nWhile
+    this was only a short message, which would take thousands of years to reach another
+    star, it was our first attempt to communicate with life outside our own world.
+    We have turned the tiny blocks of the message into tones so you can \u201Clisten\u201D
+    to it."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
   m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
@@ -283,33 +283,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - "Many years ago, scientists sent a message from a big radio telescope in Puerto
-    Rico called Arecibo.The message was like a puzzle made of 1,679 tiny blocks.
-    Some blocks were \"on\" and others were \"off\", similar to how lights can be
-    turned on or off. The scientists wanted to tell any aliens out there a little
-    about us with the message, so they arranged these blocks to communicate some
-    simple things.\\n\\n\u2022 Numbers we use from 1 to 10.\\n\u2022 Elements that
-    make up our DNA\u2014a unique instruction manual inside every person.\\n\u2022
-    A drawing of a human.\\n\u2022 Our solar system.\\n\u2022 And a picture of the
-    Arecibo telescope.\\n\\nWhile this was only a short message that would take thousands
-    of years to reach another star, it was our first attempt to communicate\u2014hoping
-    for a response outside our world. We have turned the tiny blocks of the message
-    into tones so you can \u201Clisten\u201D to it."
-  - "Many years ago, scientists sent a message from a big radio telescope in Puerto
-    Rico called Arecibo.The message was like a puzzle made of 1,679 tiny blocks.
-    Some blocks were \"on\" and others were \"off\", similar to how lights can be
-    turned on or off. The scientists wanted to tell any aliens out there a little
-    about us with the message, so they arranged these blocks to communicate some
-    simple things.\\n\\n\u2022 Numbers we use from 1 to 10.\\n\u2022 Elements that
-    make up our DNA\u2014a unique instruction manual inside every person.\\n\u2022
-    A drawing of a human.\\n\u2022 Our solar system.\\n\u2022 And a picture of the
-    Arecibo telescope.\\n\\nWhile this was only a short message that would take thousands
-    of years to reach another star, it was our first attempt to communicate\u2014hoping
-    for a response outside our world. We have turned the tiny blocks of the message
-    into tones so you can \u201Clisten\u201D to it."
-  AdjustFont: 0
+  - "Many years ago, scientists sent a message from a radio telescope in Puerto Rico
+    called Arecibo. The message was like a puzzle made of 1,679 tiny blocks. Some
+    blocks were \"on\" and others were \"off,\" similar to how a light works. The
+    scientists wanted to tell any aliens out there a little about us with the message,
+    so they arranged these blocks to share some simple facts.\\n\\n\u2022 Numbers
+    we use from 1 to 10\\n\u2022 Elements that make up our DNA\u2014a unique instruction
+    manual inside every person\\n\u2022 A drawing of a human\\n\u2022 Our solar system.\\n\u2022
+    And a picture of the Arecibo telescope\\n\\nWhile this was only a short message,
+    which would take thousands of years to reach another star, it was our first attempt
+    to communicate with life outside our own world. We have turned the tiny blocks
+    of the message into tones so you can \u201Clisten\u201D to it."
+  - "Hace muchos a\xF1os, los cient\xEDficos enviaron un mensaje desde un radiotelescopio
+    en Puerto Rico llamado Arecibo. El mensaje era como un rompecabezas hecho de
+    1,679 bloques peque\xF1os. Algunos estaban encendidos y otros estaban apagados,
+    de manera parecida a como funciona la iluminaci\xF3n. Con el mensaje, los cient\xEDficos
+    quer\xEDan decir un poco sobre nosotros a cualquier alien\xEDgena all\xE1 afuera,
+    as\xED que ordenaron estos bloques para compartir algunos hechos simples.\\n\\n\u2022
+    Los n\xFAmeros del 1 al 10\\n\u2022 Los elementos que conforman nuestro ADN (un
+    manual de instrucciones \xFAnico dentro de cada persona)\\n\u2022 Un dibujo de
+    un humano\\n\u2022 Nuestro sistema solar\\n\u2022 Y una imagen del telescopio
+    Arecibo\\n\\nAunque este era s\xF3lo un mensaje corto que necesitar\xEDa miles
+    de a\xF1os para llegar a otra estrella, era nuestro primer intento para comunicarnos
+    con vida fuera de nuestro propio mundo. Hemos convertido los peque\xF1os bloques
+    del mensaje en tonos para que puedas \u201Cescucharlo\u201D."
+  AdjustFont: 1
   FontSize: 0
-  LineSpacing: 0
+  LineSpacing: -14
 --- !u!1 &8555244
 GameObject:
   m_ObjectHideFlags: 0
@@ -761,8 +761,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 15, y: 0}
+  m_SizeDelta: {x: -30, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &198539404
 MonoBehaviour:
@@ -818,7 +818,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -875,7 +875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Clear
-  - Clear
+  - Borrar
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Start!
-  - Start!
+  - "\xA1Empieza ya!"
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -1734,7 +1734,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -250}
-  m_SizeDelta: {x: 350, y: 70}
+  m_SizeDelta: {x: 380, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &453532280
 MonoBehaviour:
@@ -2004,7 +2004,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -320}
-  m_SizeDelta: {x: 350, y: 70}
+  m_SizeDelta: {x: 420, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &497509213
 MonoBehaviour:
@@ -2797,7 +2797,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -385, y: 330}
-  m_SizeDelta: {x: 207, y: 70}
+  m_SizeDelta: {x: 207, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &698630498
 MonoBehaviour:
@@ -3664,16 +3664,15 @@ MonoBehaviour:
   TranslatedText:
   - "If there are aliens out there, what would you say to them if you just had a
     tiny grid of blocks for your message? Would you draw a picture like the Arecibo
-    Message, or try something else? \\n\\nWe've added the ability to color your blocks!
-    Try to \u201Cplay\u201D your message to hear what you added or didn't add. If
-    this message was sent into space on radio waves, imagine what an alien would
-    think! "
-  - "If there are aliens out there, what would you say to them if you just had a
-    tiny grid of blocks for your message? Would you draw a picture like the Arecibo
-    Message, or try something else? \\n\\nWe've added the ability to color your blocks!
-    Try to \u201Cplay\u201D your message to hear what you added or didn't add. If
-    this message was sent into space on radio waves, imagine what an alien would
-    think! "
+    message or try something else? We've added the ability to color your blocks!
+    Try to \u201Cplay\u201D your message to hear what you did or didn't add. If this
+    message was sent into space on radio waves, imagine what an alien would think! "
+  - "Si hay alien\xEDgenas all\xE1 afuera, \xBFqu\xE9 les dir\xEDas si s\xF3lo tuvieras
+    un peque\xF1o cuadro de bloques para tu mensaje? \xBFDibujar\xEDas una imagen
+    como la del mensaje de Arecibo o intentar\xEDas algo diferente? \xA1A\xF1adimos
+    la capacidad de colorear tus bloques! Intenta \u201Creproducir\u201D tu mensaje
+    para escuchar lo que a\xF1adiste o no a\xF1adiste. Si este mensaje se enviara
+    al espacio en ondas de radio, \xA1imagina qu\xE9 pensar\xEDa un alien\xEDgena! "
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -3961,7 +3960,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - ENTER YOUR MESSAGE
-  - ENTER YOUR MESSAGE
+  - INTRODUCE TU MENSAJE
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -4080,7 +4079,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 460, y: 320}
-  m_SizeDelta: {x: 150, y: 70}
+  m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992882888
 MonoBehaviour:
@@ -4215,7 +4214,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 460, y: -320}
-  m_SizeDelta: {x: 150, y: 70}
+  m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &994598013
 MonoBehaviour:
@@ -4674,8 +4673,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -15, y: 0}
+  m_SizeDelta: {x: -30, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1065569248
 MonoBehaviour:
@@ -4731,7 +4730,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 4
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4788,7 +4787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Guide
-  - Guide
+  - "Gu\xEDa"
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -4851,7 +4850,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Play Arecibo
+  m_text: Play Arecibo Message
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5d845485c448e98469df253633ecf628, type: 2}
   m_sharedMaterial: {fileID: -9006660395421701712, guid: 5d845485c448e98469df253633ecf628, type: 2}
@@ -4890,7 +4889,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -5
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -4941,8 +4940,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - Play Arecibo
-  - Play Arecibo
+  - Play Arecibo Message
+  - Reproducir Arecibo
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -5005,7 +5004,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hey space, it's me, Earth.
+  m_text: Hey, Space, it's me, Earth.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
   m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
@@ -5095,8 +5094,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - Hey space, it's me, Earth.
-  - Hey space, it's me, Earth.
+  - Hey, Space, it's me, Earth.
+  - "\xA1Hola, espacio! Soy yo, la Tierra."
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -5461,7 +5460,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Create Message
-  - Create Message
+  - Crear mensaje
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -6289,7 +6288,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Create Your Own Message
-  - Create Your Own Message
+  - Crea tu propio mensaje
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -6408,7 +6407,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -450, y: -320}
-  m_SizeDelta: {x: 150, y: 70}
+  m_SizeDelta: {x: 200, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1865596982
 MonoBehaviour:
@@ -6757,8 +6756,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Game Guide
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 5d845485c448e98469df253633ecf628, type: 2}
-  m_sharedMaterial: {fileID: -9006660395421701712, guid: 5d845485c448e98469df253633ecf628, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: -1086632193584107929, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6782,8 +6781,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6846,7 +6845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Game Guide
-  - Game Guide
+  - "Gu\xEDa del juego"
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -7000,7 +6999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Play Message
-  - Play Message
+  - Reproducir el mensaje
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -7040,8 +7039,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 15, y: 0}
+  m_SizeDelta: {x: -30, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2081088751
 MonoBehaviour:
@@ -7097,7 +7096,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -7154,7 +7153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - Home
-  - Home
+  - Inicio
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
