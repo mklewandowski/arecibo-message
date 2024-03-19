@@ -1,8 +1,15 @@
 # arecibo-message
 Arecibo Message is an interactive where users can create and play an arecibo message.
 
+## Gameplay
+The Arecibo Message was a radio message sent into outer space in 1974. The goal of the message was to communicate with extraterrestrial life! The message consisted of 1679 binary digits which can be displayed as an image.
+
+Create your own message by selecting squares in the grid. Then use the Play Message button to hear what your message might sound like if broadcast into space! Write letters, draw pictures, or create something totally unique!
+
+![Arecibo Message gameplay](https://github.com/mklewandowski/arecibo-message/blob/main/arecibo-message-gameplay.gif?raw=true)
+
 ## Supported Platforms
-Arecibo Message is designed for use on multiple platforms including:
+Arecibo Message is designed for use on the following platform:
 - Web
 
 ## Running Locally
